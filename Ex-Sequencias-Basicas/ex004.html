@@ -8,18 +8,18 @@
         body {
             background-color: rgb(31, 31, 31);
             color: white;
-            font: normal 20pt arial
+            font: normal 16pt arial
         }
 
     </style>
 </head>
 <body>
-    <h2>Faça um programa que leia o nome de uma pessoa
-         e mostre uma mensagem de boa-svindas para ela</h2>
+    <h2>Faça um programa que leia um número inteiro e mostre o seu antecessor e seu
+        sucessor..</h2>
 
     <script>
-        var nome = window.prompt("Digite o seu nome:")
-        document.write(`Olá ${nome}, é um prazer te conhecer!`)
+        var num = Number(window.prompt("Digite um número inteiro:"))
+        document.write(`O antecessor de ${num} é ${num - 1} o sucessor de ${num} é ${num + 1}`)
     </script>
 </body>
 </html>

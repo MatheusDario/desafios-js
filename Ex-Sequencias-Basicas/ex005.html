@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execícios de Lógica</title>
+    <style>
+        body {
+            background-color: rgb(31, 31, 31);
+            color: white;
+            font: normal 16pt arial
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o
+        seu novo salário, com 15% de aumento...</h2>
+
+    <script>
+        var salario = Number(window.prompt("Digite o valor do seu salário:"))
+        var aumento = salario * 0.15
+        salario += aumento
+        document.write(`O seu salário com aumento será de: ${salario}`)
+    </script>
+</body>
+</html>

@@ -14,12 +14,14 @@
     </style>
 </head>
 <body>
-    <h2>Faça um programa que leia o nome de uma pessoa
-         e mostre uma mensagem de boa-svindas para ela</h2>
+    <h2>Faça um programa que leia as duas notas de um aluno em uma matéria e mostre
+        na tela a sua média na disciplina..</h2>
 
     <script>
-        var nome = window.prompt("Digite o seu nome:")
-        document.write(`Olá ${nome}, é um prazer te conhecer!`)
+        var nota1 = Number(window.prompt("Digite a primeira nota:"))
+        var nota2 = Number(window.prompt("Digite a segunda nota:"))
+        var media = (nota1 + nota2) / 2
+        document.write(`A média entre ${nota1} e ${nota2} é igual a ${media}`)
     </script>
 </body>
 </html>
