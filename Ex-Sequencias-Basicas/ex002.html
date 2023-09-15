@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execícios de Lógica</title>
+    <style>
+        body {
+            background-color: rgb(31, 31, 31);
+            color: white;
+            font: normal, 20pt
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Crie um programa que leia o nome e o salário de um funcionário, mostrando no
+        final uma mensagem.
+        Ex:
+        Nome do Funcionário: Maria do Carmo
+        Salário: 1850,45
+        O funcionário Maria do Carmo tem um salário de R$1850,45 em Junho.</h2>
+
+    <script>
+        var nome = window.prompt("Digite o nome do funcionário")
+        var salario = Number(window.prompt("Salário:"))
+        document.write(`O funcionário ${nome}, tem um salário de ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}!`)
+    </script>
+</body>
+</html>
