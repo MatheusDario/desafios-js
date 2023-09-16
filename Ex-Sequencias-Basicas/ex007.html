@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execícios de Lógica</title>
+    <style>
+        body {
+            background-color: rgb(31, 31, 31);
+            color: white;
+            font: normal 16pt arial
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Desafio Fibonacci</h3>
+
+    <script>
+       var n = Number(window.prompt("Quantas somas deseja realizar ?"))
+       var i = 2
+       var numAnterior = 1
+       var numAtual = 1
+       var numAnteriorCopia
+       var numAtualCopia
+
+       while(i < n) {
+        numAnteriorCopia = numAnterior
+        numAtualCopia = numAtual
+        numAnterior = numAtualCopia
+        numAtual = numAnteriorCopia + numAtualCopia
+        i = i + 1
+        
+       }
+      document.write(numAtual)
+
+       
+
+       
+    </script>
+</body>
+</html>
