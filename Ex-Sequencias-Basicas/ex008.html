@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo salário</title>
+    <style>
+        body {
+            background-color: rgb(44, 43, 43);
+            color: aliceblue;
+            font: normal 15pt arial;
+        }
+        input {
+            font: normal 13pt arial;
+        }
+        div#salario {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculo de salário</h1>
+    <h3>O funcionário recebe R$ 25,00/hora, um dia de trabalho é equivalente há 8 horas trabalhadas</h3>
+    
+    <input type="number" name="diasTrabalhados" id="diasTrabalhados" placeholder="Digite os dias trabalhados">
+    <input type="button" value="Enviar" onclick="calculaSalario()">
+    <div id="salario">
+        
+    </div>
+
+    <script>
+        function calculaSalario() {
+
+            var resposta = document.getElementById("salario")
+            var dias =  document.getElementById("diasTrabalhados")
+            var numDias = Number(dias.value)
+            var horasTrabalhadas = numDias * 8
+            var salario = Number(horasTrabalhadas * 25)
+            resposta.innerHTML = `O salário do funcionário é de ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
+            
+        }
+    </script>
+</body>
+</html>
