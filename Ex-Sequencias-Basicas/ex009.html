@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo Perdido</title>
+    <style>
+        body {
+            background-color: rgb(44, 43, 43);
+            color: aliceblue;
+            font: normal 15pt arial;
+        }
+        input {
+            font: normal 13pt arial;
+            width: 300px;
+        }
+        input#btn {
+            margin-top: 20px;
+            width: 150px;
+        }
+        div#tempoPerdido {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descubra!! Quanto tempo de vida você perde fumando cigarro</h1>
+    <p>O ser humano perde em média 10 minutos de sua vida a cada cigarro fumado</p>
+    
+    <input type="number" name="cigarroFD" id="cigarroFD" placeholder="Digite quantos cigarros fuma por dia"><br>
+    <input type="number" name="anosFC" id="anosFC" placeholder="Digite quantos anos fuma cigarro"><br>
+    <input type="button" value="Enviar" id="btn" onclick="calculaTempoPerdido()">
+    <div id="tempoPerdido">
+        
+    </div>
+
+    <script>
+        function calculaTempoPerdido() {
+            var cigarroDia = document.getElementById("cigarroFD")
+            var anosFumando = document.getElementById("anosFC")
+            var resposta = document.getElementById("tempoPerdido")
+
+            var numCigarroDia = Number(cigarroDia.value)
+            var numAnosFumando = Number(anosFumando.value)
+            var tempoPerdidoFumandoMinutos = numCigarroDia * 10
+            var tmpFumandoDias = numAnosFumando * 365
+            var totalDiasPerdido = (tempoPerdidoFumandoMinutos * tmpFumandoDias) / 1440
+
+            resposta.innerHTML = `O tempo perdido em dias é de aproximadamento de ${totalDiasPerdido.toFixed(0)} dias.`   
+        }
+    </script>
+</body>
+</html>
