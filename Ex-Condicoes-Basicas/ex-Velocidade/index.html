@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multa em Alta Velocidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Qual a sua velocidade ?</h1>
+    </header>
+
+    <section>
+        <div>  
+            <h4>Sabendo que se dirigir acima de 80Km/h o motorista será multado no valor de 5,00R$
+                Por cada Km/h que ficou acima da velocidade permitida. Insira sua velocidade no campo.
+            </h4>
+        </div>
+
+        <div>
+            <label>Digite sua velocidade:</label>
+            <input type="number" name="velocidade" id="txtVel" min="1" >
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+
+        <div id="res">
+
+        </div>
+
+    </section>
+
+    <footer>
+        &copy; Developer by:Matheus Dario
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
