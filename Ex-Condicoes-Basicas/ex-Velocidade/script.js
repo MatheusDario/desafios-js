@@ -20,4 +20,4 @@ function verificar() {
         Use sempre cindo de segurança.</p>`
         document.body.style.backgroundColor = 'green'
     }
-}
+}   
